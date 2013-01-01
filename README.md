@@ -4,14 +4,17 @@ BukkitUpdateChecker
 Provides a service to handle checking if the current plugin calling is already the latest on the bukkit dev site.
 
 This service requires that:
+
     1. plugin filename on disk (when downloaded) uses a specific (yet flexible) format
     2. bukkit dev package name uses a specific format
 
 The specific format is:
+
     (on disk)   <Name>-<Major>.<Minor>.<Revision><Tag>
     (dev site)  <Major>.<Minor>.<Revision><Tag>
 
 For example:
+
     (on disk)   KFactions-1.34.67B     OR    KFactions-4.54.123456789LETTERSATEND
     (dev site)  1.32.67B
 
